@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     patch "/books/:id" => "books#update"
     delete "/books/:id" => "books#destroy"
     #resources :books で開発効率高まる
-    get "/top" => "homes#top"
+    get "/" => "homes#top"
+    #root to: 'homes#top'←これでも"/"でトップ画面の表示となる
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
