@@ -13,11 +13,7 @@
  *= require_tree .
  *= require_self
  */
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
+
 p,td,ul{
   font-size:13px;
   margin:33px;
@@ -25,10 +21,12 @@ p,td,ul{
   font-family: verdana, arial, helvetica, sans-serif;
 }
 body{
-  margin:33px;
-  font-size:13px;
+  background-color: #fff;
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
+  font-size:13px;
+  line-height: 18px;
+  margin:33px;
 }
 a{
   color:#000;
@@ -46,10 +44,6 @@ label{
   display:block;
 }
 
-h2{
-  font-size:26px;
-  margin:16px 0;
-}
-.notice{
+#notice{
   color:#008000;
 }

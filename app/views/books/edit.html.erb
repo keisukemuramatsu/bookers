@@ -1,8 +1,8 @@
 <body>
-  <h2>Editing Book</h2>
+  <h1>Editing Book</h1>
   <%= form_with model:@book, local:true do |f| %>
-     <div class="field">
-      <label>Title</label>
+    <%= render 'layouts/error_messages', resource: @book %>
+    <label>Title</label>
       <%= f.text_field :title %>
     </div>
     <div class="field">
@@ -12,6 +12,6 @@
     <div class="field">
     <%= f.submit 'Update Book' %>
     </div>
-    <a>Show|Back</a>
+    <a><%= link_to "Show", book_path %>|<%= link_to "Back", books_path %> </a>
   <% end %>
 </body>

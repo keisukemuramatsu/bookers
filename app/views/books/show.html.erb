@@ -1,6 +1,10 @@
 <body>
-  <p class=notice>Book was successfully cretesd.</p>
+  <% if flash[:notice] %>
+  <p id='notice'>
+    <%= flash[:notice] %>
+  </p>
+  <% end %>
   <p><strong>Title:</strong><%= @book.title %></p>
   <p><strong>body:</strong><%= @book.body %></p>
-  <a>Edit|Back</a>
+  <a><%= link_to "Edit", edit_books_path %>||<%= link_to "Back", books_path %> </a>
 </body>
